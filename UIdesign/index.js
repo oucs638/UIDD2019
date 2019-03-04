@@ -6,6 +6,7 @@ $(document).ready(() => {
     var rightImg_2 = document.getElementById("right_2");
     var rightImg_3 = document.getElementById("right_3");
     var rightBar = document.getElementById("rightBar");
+    var topic = document.getElementById("topic");
     var step = Math.PI * 0.04;
 
     var radius = 30;
@@ -72,6 +73,16 @@ $(document).ready(() => {
                         counter++;
                         if (counter == 101) {
                             clearInterval(sideBar);
+                            counter = 0;
+                            topic.style.top = "" + 130 + "%";
+                            $("#topic").css("display", "block");
+                            var showTopic = setInterval(() => {
+                                topic.style.top = "" + (130 - counter) + "%";
+                                counter++;
+                                if (counter == 101) {
+                                    clearInterval(showTopic);
+                                }
+                            }, 10);
                         }
                     }, 10);
                 }

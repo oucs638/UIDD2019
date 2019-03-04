@@ -1,0 +1,128 @@
+body{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 98.5vw;
+    height: 98.25vh;
+    background-color: #222222;
+}
+
+#bigback{
+    position: absolute;
+    float: left;
+    top: 7.5%;
+    left: 95%;
+    width: 90%;
+    height: 85%;
+    background-color: #000000;
+}
+
+#left{
+    position: relative;
+    float: left;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    /* background-color: #FF0000; */
+}
+
+#leftImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 200%;
+    display: none;
+}
+
+#right{
+    position: relative;
+    float: left;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    /* background-color: #000000; */
+}
+
+#right_0{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 5%;
+    left: 5%;
+    background-color: #888888;
+    display: none;
+}
+#right_1{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 20%;
+    left: 40%;
+    display: block;
+    background-color: #888888;
+    display: none;
+}
+#right_2{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 50%;
+    left: 5%;
+    display: block;
+    background-color: #888888;
+    display: none;
+}
+#right_3{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 70%;
+    left: 40%;
+    display: block;
+    background-color: #888888;
+    display: none;
+}
+#rightImg_0{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    display: block;
+}
+#rightImg_1{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    display: block;
+}
+#rightImg_2{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    display: block;
+}
+#rightImg_3{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    display: block;
+}
+
+#rightBar{
+    position: absolute;
+    width: 10%;
+    height: 90%;
+    top: 5%;
+    left: 80%;
+    display: none;
+    background-color: #333333;
+}

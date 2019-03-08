@@ -1,0 +1,346 @@
+ body {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     /* background-color: blue; */
+     width: 99vw;
+     height: 98.25vh;
+     /* background-image: url(./res/background/backgroundNW.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: top;
+     margin: auto; */
+     /* background-attachment: fixed; */
+ }
+
+ #backBackgroundImg {
+     height: 100%;
+     width: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+     z-index: -1;
+ }
+
+ /****************/
+
+ #indexContainer {
+     /* background-color: red; */
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     z-index: 0;
+ }
+
+ .backblock {
+     width: 100%;
+     height: 100%;
+     /* background-color: green; */
+ }
+
+ #top, #bottom {
+     height: 25%;
+     display: flex;
+     flex-direction: row;
+     align-items: stretch;
+ }
+
+ #middle {
+     display: flex;
+     flex-direction: row;
+     align-items: stretch;
+ }
+
+ /****************/
+
+ .topblock {
+     width: 100%;
+     height: 100%;
+ }
+
+ #top_left, #top_right {
+     width: 30%;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+ }
+
+ /****************/
+
+ .top_left_sup {
+     width: 33.33%;
+     height: 33.33%;
+ }
+
+ #top_left_btn {
+     height: 100%;
+     width: 100%;
+ }
+
+ #top_left_btn_img {
+     height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ /****************/
+
+ .top_right_sup {
+     height: 33.33%;
+ }
+
+ .top_right_sup_left {
+     width: 33.3%;
+ }
+
+ .top_right_sup_middle {
+     width: 53.33%;
+ }
+
+ .top_right_sup_right {
+     width: 13.33%;
+ }
+
+ #top_right_btn_0, #top_right_btn_1 {
+     height: 100%;
+     width: 100%;
+ }
+
+ #top_right_btn_0_img, #top_right_btn_1_img {
+     height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ /****************/
+
+ .middleblock {
+     width: 100%;
+     height: 100%;
+ }
+
+ #middle_sidebar_left, #middle_sidebar_right {
+     width: 12.5%;
+     height: 100%;
+     max-width: 12.5%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ #middle_center {
+     height: 100%;
+     max-width: 75%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ #middle_center_left {
+     height: 100%;
+     width: 55%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+ }
+
+ #middle_center_right {
+     height: 100%;
+     width: 45%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+ }
+
+ /****************/
+
+ .middle_center_right_sup, .middle_center_left_sup {
+     width: 100%;
+     height: 15%;
+ }
+
+ #middle_center_right_main {
+     width: 100%;
+     height: 70%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+ }
+
+ #middle_center_left_main {
+     width: 100%;
+     height: 70%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: column;
+     align-content: stretch;
+     flex-wrap: wrap;
+ }
+
+ /****************/
+
+ .middle_center_right_main_img {
+     width: 50%;
+     height: 50%;
+     max-width: 50%;
+     max-height: 50%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ .bucketImg {
+     width: 95%;
+     height: 95%;
+     max-width: 95%;
+     max-height: 95%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ /****************/
+
+ #middle_center_right_bottom {
+     width: 100%;
+     height: 15%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+ }
+
+ .middle_center_right_bottom_img {
+     width: 25%;
+     height: 100%;
+     max-width: 25%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ .choiceImg {
+     width: 95%;
+     height: 95%;
+     max-width: 95%;
+     max-height: 95%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ /****************/
+
+ #topicTitle {
+     width: 100%;
+     height: 57.5%;
+     max-width: 100%;
+     max-height: 57.5%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ #underTopicTitle {
+     width: 100%;
+     height: 42.5%;
+     max-width: 100%;
+     max-height: 42.5%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: column;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ /****************/
+
+ .changeFoodColor_sup {
+     width: 100%;
+     height: 30%;
+ }
+
+ #changeFoodColor_sup_middle {
+     height: 40%;
+     overflow: hidden;
+     position: center;
+     display: flex;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .changeFoodColor_btn_sup {
+     width: 40%;
+     height: 100%;
+ }
+
+ #changeFoodColor_btn {
+     width: 60%;
+     height: 100%;
+     max-width: 60%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ #changeFoodColor_btn_img {
+     width: 100%;
+     height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }
+
+ /****************/

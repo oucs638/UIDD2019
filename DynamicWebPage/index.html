@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.2/pixi.min.js"></script>
 </head>
 
 <body>
@@ -62,11 +63,9 @@
         </div>
 
         <div id="middle" class="backblock">
-
-            <div id="middle_sidebar_left" class="middleblock"></div>
-
-            <div id="middle_center" class="middleblock">
-
+            <!-- page0 start  -->
+            <div id="middle_sidebar_left" class="middleblock page0"></div>
+            <div id="middle_center" class="middleblock page0">
                 <div id="middle_center_left">
                     <div class="middle_center_left_sup"></div>
                     <div id="middle_center_left_main" class="middle_center_left_sup">
@@ -85,42 +84,86 @@
                     </div>
                     <div class="middle_center_left_sup"></div>
                 </div>
-
                 <div id="middle_center_right">
                     <div class="middle_center_right_sup"></div>
                     <div id="middle_center_right_main" class="middle_center_right_sup">
-                        <div id="bucket0Div" class="middle_center_right_main_img">
-                            <img id="bucket0" class="bucketImg">
-                        </div>
-                        <div id="bucket1Div" class="middle_center_right_main_img">
-                            <img id="bucket1" class="bucketImg">
-                        </div>
-                        <div id="bucket2Div" class="middle_center_right_main_img">
-                            <img id="bucket2" class="bucketImg">
-                        </div>
-                        <div id="bucket3Div" class="middle_center_right_main_img">
-                            <img id="bucket3" class="bucketImg">
-                        </div>
+                        <canvas id="middle_center_right_canvas"></canvas>
                     </div>
-                    <div id="middle_center_right_bottom" class="middle_center_right_sup">
-                        <div id="choice0Div" class="middle_center_right_bottom_img">
-                            <img id="choice0" class="choiceImg">
-                        </div>
-                        <div id="choice1Div" class="middle_center_right_bottom_img">
-                            <img id="choice1" class="choiceImg">
-                        </div>
-                        <div id="choice2Div" class="middle_center_right_bottom_img">
-                            <img id="choice2" class="choiceImg">
-                        </div>
-                        <div id="choice3Div" class="middle_center_right_bottom_img">
-                            <img id="choice3" class="choiceImg">
-                        </div>
+                </div>
+            </div>
+            <div id="middle_sidebar_right" class="middleblock page0"></div>
+            <!-- page0 end -->
+
+
+            <!-- page1 start -->
+            <div id="middle_menu_sidebar_left" class="middle_menu_sidebar"></div>
+            <div id="middle_menu_center" class="page1">
+                <div id="menu0" class="menu">
+                    <div class="menuInsup"></div>
+                    <div id="display0" class="displayS">
+                        <img id="displayImg0" class="displayImg">
+                    </div>
+                    <div id="showPrice0" class="showPrice">
+                        <img id="showPriceImg0" class="showPriceImg">
+                    </div>
+                    <div id="addToCartBtn0" class="addToCartBtn">
+                        <img id="addToCartBtnImg0" class="addToCartBtnImg">
+                    </div>
+                </div>
+                <div id="menu1" class="menu">
+                    <div class="menuInsup"></div>
+                    <div id="display1" class="displayS">
+                        <img id="displayImg1" class="displayImg">
+                    </div>
+                    <div id="showPrice1" class="showPrice">
+                        <img id="showPriceImg1" class="showPriceImg">
+                    </div>
+                    <div id="addToCartBtn1" class="addToCartBtn">
+                        <img id="addToCartBtnImg1" class="addToCartBtnImg">
+                    </div>
+                </div>
+                <div id="menu2" class="menu">
+                    <div class="menuInsup"></div>
+                    <div id="display2" class="displayS">
+                        <img id="displayImg2" class="displayImg">
+                    </div>
+                    <div id="showPrice2" class="showPrice">
+                        <img id="showPriceImg2" class="showPriceImg">
+                    </div>
+                    <div id="addToCartBtn2" class="addToCartBtn">
+                        <img id="addToCartBtnImg2" class="addToCartBtnImg">
+                    </div>
+                </div>
+                <div id="menu3" class="menu">
+                    <div class="menuInsup"></div>
+                    <div id="display3" class="displayS">
+                        <img id="displayImg3" class="displayImg">
+                    </div>
+                    <div id="showPrice3" class="showPrice">
+                        <img id="showPriceImg3" class="showPriceImg">
+                    </div>
+                    <div id="addToCartBtn3" class="addToCartBtn">
+                        <img id="addToCartBtnImg3" class="addToCartBtnImg">
+                    </div>
+                </div>
+                <div id="menu4" class="menu">
+                    <div class="menuInsup"></div>
+                    <div id="display4" class="displayS">
+                        <img id="displayImg4" class="displayImg">
+                    </div>
+                    <div id="showPrice4" class="showPrice">
+                        <img id="showPriceImg4" class="showPriceImg">
+                    </div>
+                    <div id="addToCartBtn4" class="addToCartBtn">
+                        <img id="addToCartBtnImg4" class="addToCartBtnImg">
                     </div>
                 </div>
 
             </div>
+            <div id="middle_menu_sidebar_right" class="middle_menu_sidebar"></div>
+            <!-- page1 end -->
 
-            <div id="middle_sidebar_right" class="middleblock"></div>
+
         </div>
 
         <div id="bottom" class="backblock">

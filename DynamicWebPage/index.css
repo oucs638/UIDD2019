@@ -3,7 +3,7 @@
      top: 0px;
      left: 0px;
      /* background-color: blue; */
-     width: 99vw;
+     width: 100vw;
      height: 98.25vh;
      /* background-image: url(./res/background/backgroundNW.png);
      background-repeat: no-repeat;
@@ -11,6 +11,14 @@
      background-position: top;
      margin: auto; */
      /* background-attachment: fixed; */
+ }
+
+ .page0 {
+     display: flex;
+ }
+
+ .page1 {
+     display: none;
  }
 
  #backBackgroundImg {
@@ -44,6 +52,7 @@
  .backblock {
      width: 100%;
      height: 100%;
+     z-index: 1;
      /* background-color: green; */
  }
 
@@ -65,6 +74,7 @@
  .topblock {
      width: 100%;
      height: 100%;
+     z-index: 2;
  }
 
  #top_left, #top_right {
@@ -80,11 +90,13 @@
  .top_left_sup {
      width: 33.33%;
      height: 33.33%;
+     z-index: 3
  }
 
  #top_left_btn {
      height: 100%;
      width: 100%;
+     z-index: 4;
  }
 
  #top_left_btn_img {
@@ -101,6 +113,7 @@
 
  .top_right_sup {
      height: 33.33%;
+     z-index: 3;
  }
 
  .top_right_sup_left {
@@ -118,6 +131,7 @@
  #top_right_btn_0, #top_right_btn_1 {
      height: 100%;
      width: 100%;
+     z-index: 4;
  }
 
  #top_right_btn_0_img, #top_right_btn_1_img {
@@ -135,6 +149,7 @@
  .middleblock {
      width: 100%;
      height: 100%;
+     z-index: 2;
  }
 
  #middle_sidebar_left, #middle_sidebar_right {
@@ -188,17 +203,24 @@
  .middle_center_right_sup, .middle_center_left_sup {
      width: 100%;
      height: 15%;
+     z-index: 3;
  }
 
  #middle_center_right_main {
      width: 100%;
-     height: 70%;
+     height: 85%;
      overflow: hidden;
      position: center;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      align-content: stretch;
      flex-wrap: wrap;
+ }
+
+ #middle_center_right_canvas {
+     position: relative;
+     width: 100%;
+     height: 100%;
  }
 
  #middle_center_left_main {
@@ -210,65 +232,6 @@
      flex-direction: column;
      align-content: stretch;
      flex-wrap: wrap;
- }
-
- /****************/
-
- .middle_center_right_main_img {
-     width: 50%;
-     height: 50%;
-     max-width: 50%;
-     max-height: 50%;
-     overflow: hidden;
-     position: center;
-     display: block;
-     margin: auto;
- }
-
- .bucketImg {
-     width: 95%;
-     height: 95%;
-     max-width: 95%;
-     max-height: 95%;
-     overflow: hidden;
-     position: center;
-     display: block;
-     margin: auto;
- }
-
- /****************/
-
- #middle_center_right_bottom {
-     width: 100%;
-     height: 15%;
-     overflow: hidden;
-     position: center;
-     display: flex;
-     flex-direction: row;
-     align-content: stretch;
-     flex-wrap: wrap;
- }
-
- .middle_center_right_bottom_img {
-     width: 25%;
-     height: 100%;
-     max-width: 25%;
-     max-height: 100%;
-     overflow: hidden;
-     position: center;
-     display: block;
-     margin: auto;
- }
-
- .choiceImg {
-     width: 95%;
-     height: 95%;
-     max-width: 95%;
-     max-height: 95%;
-     overflow: hidden;
-     position: center;
-     display: block;
-     margin: auto;
  }
 
  /****************/
@@ -344,3 +307,94 @@
  }
 
  /****************/
+
+ /********************************
+FOLLOWING ARE PAGE1 !!!!!!!!!!!!!!!!
+ ********************************/
+
+ #middle_menu_center {
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+     overflow: hidden;
+     position: center;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .middle_menu_sidebar {
+     width: 0%;
+     height: 100%;
+     z-index: 2;
+     overflow: hidden;
+     position: center;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .menu {
+     width: 20%;
+     height: 100%;
+     z-index: 2;
+     display: flex;
+     overflow: hidden;
+     position: center;
+     flex-direction: column;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .menuInsup {
+     width: 100%;
+     height: 10%;
+     z-index: 3;
+     display: flex;
+     overflow: hidden;
+     position: center;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .displayS {
+     width: 100%;
+     height: 70%;
+     z-index: 3;
+     display: flex;
+     overflow: hidden;
+     position: center;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .showPrice, .addToCartBtn {
+     width: 100%;
+     height: 10%;
+     z-index: 3;
+     display: flex;
+     overflow: hidden;
+     position: center;
+     flex-direction: row;
+     align-content: stretch;
+     flex-wrap: wrap;
+     margin: auto;
+ }
+
+ .displayImg, .showPriceImg, .addToCartBtnImg {
+     width: 100%;
+     height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     overflow: hidden;
+     position: center;
+     display: block;
+     margin: auto;
+ }

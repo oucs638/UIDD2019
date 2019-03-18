@@ -5,7 +5,8 @@ let backgroungImg = [
     "./res/button/display1.png",
     "./res/button/display2.png",
     "./res/button/display3.png",
-    "./res/button/display4.png"
+    "./res/button/display4.png",
+    "./res/background/page1_price.png"
 ];
 let buttonImg = [
     "./res/button/home.png",
@@ -20,7 +21,9 @@ let buttonImg = [
     "./res/button/choice0.png",
     "./res/button/choice1.png",
     "./res/button/choice2.png",
-    "./res/button/choice3.png"
+    "./res/button/choice3.png",
+    "./res/background/page1_addToCart.png",
+    "./res/background/page1_price0.png"
 ];
 
 $(document).ready(() => {
@@ -31,13 +34,15 @@ $(document).ready(() => {
     document.getElementById("changeFoodColor_btn_img").src = buttonImg[4];
 });
 
-
-// create a PIXI.Application and append view to canvas
 let type = "WebGL";
 if (!PIXI.utils.isWebGLSupported()) {
     type = "canvas";
 }
 PIXI.utils.sayHello(type);
+/****************************************************************
+ page0 middle right part canvas start
+****************************************************************/
+// create a PIXI.Application and append view to canvas
 let choiceCanvas = document.getElementById("middle_center_right_canvas");
 let app = new PIXI.Application({
     top: choiceCanvas.offsetTop,
@@ -153,20 +158,20 @@ function choiceOnDragMove() {
 function changePage() {
     $(".page0").css("display", "none");
     $(".page1").css("display", "flex");
-    document.getElementById("backBackgroundImg").src = backgroungImg[0];
+    // document.getElementById("backBackgroundImg").src = backgroungImg[7];/
     document.getElementById("displayImg0").src = backgroungImg[2];
-    // document.getElementById("showPriceImg0").src = buttonImg[];
-    // document.getElementById("addToCartBtnImg0").src = buttonImg[];
     document.getElementById("displayImg1").src = backgroungImg[3];
-    // document.getElementById("showPriceImg1").src = buttonImg[];
-    // document.getElementById("addToCartBtnImg1").src = buttonImg[];
     document.getElementById("displayImg2").src = backgroungImg[4];
-    // document.getElementById("showPriceImg2").src = buttonImg[];
-    // document.getElementById("addToCartBtnImg2").src = buttonImg[];
     document.getElementById("displayImg3").src = backgroungImg[5];
-    // document.getElementById("showPriceImg3").src = buttonImg[];
-    // document.getElementById("addToCartBtnImg3").src = buttonImg[];
     document.getElementById("displayImg4").src = backgroungImg[6];
-    // document.getElementById("showPriceImg4").src = buttonImg[];
-    // document.getElementById("addToCartBtnImg4").src = buttonImg[];
+    document.getElementById("addToCartBtnImg0").src = buttonImg[13];
+    document.getElementById("addToCartBtnImg1").src = buttonImg[13];
+    document.getElementById("addToCartBtnImg2").src = buttonImg[13];
+    document.getElementById("addToCartBtnImg3").src = buttonImg[13];
+    document.getElementById("addToCartBtnImg4").src = buttonImg[13];
+    document.getElementById("showPriceImg0").src = buttonImg[14];
+    document.getElementById("showPriceImg1").src = buttonImg[14];
+    document.getElementById("showPriceImg2").src = buttonImg[14];
+    document.getElementById("showPriceImg3").src = buttonImg[14];
+    document.getElementById("showPriceImg4").src = buttonImg[14];
 }

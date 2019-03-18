@@ -155,8 +155,8 @@
  #middle_sidebar_left, #middle_sidebar_right {
      width: 12.5%;
      height: 100%;
-     max-width: 12.5%;
-     max-height: 100%;
+     /* max-width: 20%; */
+     /* max-height: 100%; */
      overflow: hidden;
      position: center;
      display: block;
@@ -164,9 +164,10 @@
  }
 
  #middle_center {
+     width: 75%;
      height: 100%;
-     max-width: 75%;
-     max-height: 100%;
+     /* max-width: 60%; */
+     /* max-height: 100%; */
      overflow: hidden;
      position: center;
      display: flex;
@@ -178,7 +179,7 @@
 
  #middle_center_left {
      height: 100%;
-     width: 55%;
+     width: 60%;
      overflow: hidden;
      position: center;
      display: flex;
@@ -189,7 +190,7 @@
 
  #middle_center_right {
      height: 100%;
-     width: 45%;
+     width: 40%;
      overflow: hidden;
      position: center;
      display: flex;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Http & Ajax</title>
+</head>
+<body>
+
+    <button id="listBtn" type="submit">list all students</button>
+    <div id="listDsp"><h1 id="listDspContent"></h1></div>
+    <form id="searchForm">
+        student ID: <input type="text" name="studentID"><br>
+        <button id="searchBtn" type="submit">search specific student</button>
+        <div id="searchDsp"><h1 id="searchDspContent"></h1></div>
+    </form>
+    <form id="addForm">
+        student ID: <input type="text" name="studentID"><br>
+        student Name: <input type="text" name="studentName"><br>
+        <button id="addBtn" type="submit">add new student</button>
+    </form>
+    <form id="delForm">
+        student ID: <input type="text" name="studentID"><br>
+        <button id="delBtn" type="submit">delete specific student</button>
+    </form>
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
